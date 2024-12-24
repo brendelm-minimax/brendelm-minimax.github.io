@@ -22,6 +22,16 @@
             font-family: monospace;
             letter-spacing: 2px;
         }
+        .view-badge {
+            background: linear-gradient(45deg, #ff3366, #ff6b6b);
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-weight: bold;
+            font-size: 0.875rem;
+        }
     </style>
 </head>
 <body class="min-h-screen py-8">
@@ -31,7 +41,7 @@
             <div class="dragon-bg p-6 rounded-xl">
                 <!-- Header -->
                 <div class="text-center mb-8">
-                    <p class="text-red-500 mb-1">FROHE WEIHNACHTEN MEIN SCHATZ🎄</p>
+                    <p class="text-red-500 mb-1">FROHE WEIHNACHTEN MEIN SCHATZ 🎄</p>
                     <h1 class="text-4xl font-bold mb-2 tracking-wider">IMAGINE DRAGONS</h1>
                     <h2 class="text-xl text-gray-400 tracking-widest">LOOM WORLD TOUR</h2>
                 </div>
@@ -40,7 +50,7 @@
                 <div class="border-t border-b border-gray-800 py-6 mb-6 space-y-4">
                     <div class="flex justify-between items-center">
                         <span class="text-gray-400">DATUM</span>
-                        <span class="font-bold">16. AUGUST 2024</span>
+                        <span class="font-bold">16 JULI 2025</span>
                     </div>
                     <div class="flex justify-between items-center">
                         <span class="text-gray-400">LOCATION</span>
@@ -51,8 +61,16 @@
                         <span class="font-bold">HAMBURG</span>
                     </div>
                     <div class="flex justify-between items-center">
+                        <span class="text-gray-400">BLOCK</span>
+                        <span class="font-bold">19B</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-400">REIHE</span>
+                        <span class="font-bold">9</span>
+                    </div>
+                    <div class="flex justify-between items-center">
                         <span class="text-gray-400">TICKETS</span>
-                        <span class="font-bold">2 SEATS</span>
+                        <span class="font-bold">2x SITZPLATZ</span>
                     </div>
                 </div>
             </div>
@@ -62,12 +80,25 @@
         <div class="rounded-xl overflow-hidden mb-8 shadow-lg">
             <iframe 
                 class="w-full h-64"
-                src="https://www.youtube.com/embed/VUiuqde6RuM"
+                src="https://www.youtube.com/watch?v=VUiuqde6RuM"
                 title="Imagine Dragons LOOM Tour"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
             </iframe>
+        </div>
+
+
+        <!-- Sitzplatz-Ausblick -->
+        <div class="ticket-border rounded-xl mb-8">
+            <div class="dragon-bg p-6 rounded-xl relative">
+                <h3 class="text-xl font-bold mb-4 text-center">DEIN AUSBLICK</h3>
+                <img 
+                    src="assets/ausblick.png"
+                    alt="Ausblick von Block 19B"
+                    class="w-full rounded-lg shadow-lg"
+                />
+            </div>
         </div>
 
         <!-- Personal Message -->
